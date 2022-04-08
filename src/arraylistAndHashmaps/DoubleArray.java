@@ -23,6 +23,7 @@ public class DoubleArray {
 			}
 		}
 	 System.out.println(b);
+		System.out.println("Program COmpletes");
 	}
 	
 }
