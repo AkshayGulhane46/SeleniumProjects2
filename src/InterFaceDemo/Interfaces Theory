@@ -1,0 +1,21 @@
+Like a class interfaces can have methods and variables but the methods declared interface are by default abstract
+
+java uses interface to implement multiple ìnterface and can implement multiple java interfaces
+
+interfaces do not have body they have to be implemented by class before you access them.
+
+the class that implements interfaces must implement all the methods of that interface.
+
+in interface it does not allow you extend more than one class but you can implement more than one interfaces 
+	in your class
+	
+an interface in java is a blueprint of a class it has static constant and abstract methods
+
+---------------------------------------------------------------------------------------------------------------
+Why do we use interfaces
+
+java does not support multiple inheritance in case of class but by using interfaces it can achieve 
+multiple inheritance 
+
+It is used to achieve abstraction
+---------------------------------------------------------------------------------------------------------------
