@@ -5,20 +5,18 @@ import java.util.Scanner;
 public class ReverseString {
 	public static void main(String args[]) {
 		//Scanner sc = new Scanner(System.in);
-		int s[] = {1,2,3,4,5,6,7,8};
+		int s[] = {10,9,8,7,6};
 		//System.out.println(s.length);
-		int end = s.length-1;
-		int temp = 0;
-		int mid = (int) Math.floor(end/2) + 1;
-	//	System.out.println(mid);
-		for(int i = 0 ; i < mid ; i++) {
+		int lastindex = s.length-1;
+		int i = 3;
+		int temp;
+		while(i < lastindex){
 			temp = s[i];
-			s[i] = s[end];
-			s[end] = temp;
-			//System.out.println(s[i]);
-		//	System.out.println(s[end]);
-			end--;
-			}
+			s[i] = s[lastindex];
+			s[lastindex]=temp;
+			i=i+1;
+			lastindex = lastindex - 1;
+		}
 		
 	for(int j = 0 ; j <= s.length-1 ; j ++) {
 		System.out.println(s[j]);
