@@ -13,6 +13,7 @@ public class arraylistDemo {
 		//----------------------- loop for arraylist to traverse -------------------//
 		for(String counting:ar) {
 			System.out.println(counting);
+
 		}
 		
 	}
