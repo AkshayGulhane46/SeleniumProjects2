@@ -2,11 +2,12 @@ package controlStatementPackage;
 
 public class DiamondPatturn {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 5;
         int i = 1;
-        while( i <= n/2){
+        int n1 = (n+1)/2;
+        while( i <= n1){
             int spaces1 = 1;
-            while(spaces1 < n-i){
+            while(spaces1 < n1-i){
                 System.out.print(" ");
                 spaces1 = spaces1 + 1;
             }
@@ -20,10 +21,13 @@ public class DiamondPatturn {
         }
 
         // lower half
-        int j = n/2 - 1;
-        while( j >= 1){
+
+        //int i = 1;
+        int n2 = n1-1;
+        int j = n1-1;
+        while( j >= 1 ){
             int spaces1 = 1;
-            while(spaces1 < n-j){
+            while(spaces1 < n2-j){
                 System.out.print(" ");
                 spaces1 = spaces1 + 1;
             }
@@ -35,6 +39,5 @@ public class DiamondPatturn {
             j = j - 1;
             System.out.println();
         }
-
     }
 }
