@@ -1,0 +1,24 @@
+
+
+// postman defined function
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+const response = pm.response.json();
+console.log(response.status);
+
+User defined function to check the status of an response
+
+pm.test("Status Should be OK", () => {
+    pm.expect(response.status).to.eql("OK");
+})
+
+// Extract Data from JSON responce
+// filter is used to extract a value
+
+const response = pm.response.json();
+const nonFictionBooks = response.filter((book) => book.available == true);
+console.log(nonFictionBooks);
+
+
